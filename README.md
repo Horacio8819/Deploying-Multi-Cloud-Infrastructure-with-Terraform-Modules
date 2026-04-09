@@ -98,12 +98,12 @@ terraform apply
 
 | Resource | Region |
 |---|---|
-| `aws_s3_bucket.primary` (`day15-app-primary-bucket`) | us-east-1 |
-| `aws_s3_bucket_versioning.primary` | us-east-1 |
-| `aws_s3_bucket_public_access_block.primary` | us-east-1 |
-| `aws_s3_bucket.replica` (`day15-app-replica-bucket`) | us-west-2 |
-| `aws_s3_bucket_versioning.replica` | us-west-2 |
-| `aws_s3_bucket_public_access_block.replica` | us-west-2 |
+| `aws_s3_bucket.primary` (`day15-app-primary-bucket`) | eu-central-1 |
+| `aws_s3_bucket_versioning.primary` | eu-central-1 |
+| `aws_s3_bucket_public_access_block.primary` | eu-central-1 |
+| `aws_s3_bucket.replica` (`day15-app-replica-bucket`) | eu-west-1 |
+| `aws_s3_bucket_versioning.replica` | us-west-1 |
+| `aws_s3_bucket_public_access_block.replica` | us-west-1 |
 
 ---
 
