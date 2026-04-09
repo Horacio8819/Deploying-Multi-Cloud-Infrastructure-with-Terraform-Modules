@@ -71,8 +71,8 @@ terraform {
 
 **In the root module** (`live/main.tf`):
 ```hcl
-provider "aws" { alias = "primary"; region = "us-east-1" }
-provider "aws" { alias = "replica"; region = "us-west-2"  }
+provider "aws" { alias = "primary"; region = "eu-central-1" }
+provider "aws" { alias = "replica"; region = "eu-west-1"  }
 
 module "multi_region_app" {
   source   = "../modules/multi-region-app"
@@ -124,11 +124,11 @@ Verify nginx is running:
 
 ```bash
 # PowerShell
-(Invoke-WebRequest -Uri http://localhost:8090 -UseBasicParsing).StatusCode
+(Invoke-WebRequest -Uri http://localhost:8070 -UseBasicParsing).StatusCode
 # Expected: 200
 
 # Or check directly in browser
-http://localhost:8090
+http://localhost:8070
 ```
 
 Destroy the container when done:
