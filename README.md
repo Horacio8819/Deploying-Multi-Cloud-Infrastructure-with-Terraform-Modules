@@ -103,8 +103,8 @@ terraform apply
 | `aws_s3_bucket_versioning.primary` | eu-central-1 |
 | `aws_s3_bucket_public_access_block.primary` | eu-central-1 |
 | `aws_s3_bucket.replica` (`day15-app-replica-bucket`) | eu-west-1 |
-| `aws_s3_bucket_versioning.replica` | us-west-1 |
-| `aws_s3_bucket_public_access_block.replica` | us-west-1 |
+| `aws_s3_bucket_versioning.replica` | eu-west-1 |
+| `aws_s3_bucket_public_access_block.replica` | eu-west-1 |
 
 ---
 
