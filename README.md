@@ -20,8 +20,9 @@ This project completes Chapter 7 and covers the most advanced provider scenarios
 terraform-challenge-day15/
 ├── modules/
 │   └── multi-region-app/       # Reusable module — no provider blocks inside
-│       ├── versions.tf          # configuration_aliases declaration
-│       ├── main.tf              # S3 buckets using aws.primary and aws.replica
+│       ├── versions.tf         # configuration_aliases declaration
+│       ├── main.tf             # S3 buckets using aws.primary and aws.replica
+|       ├── iam.tf              
 │       ├── variables.tf
 │       └── outputs.tf
 │
